@@ -149,6 +149,9 @@ public class spikeMove : MonoBehaviour
         else if (other.transform.tag == "donottouchy")
         {
             score -= 50;
+            ballRB.transform.position = new Vector2(0, 0);
+            ballRB.velocity = new Vector2(0, 0);
+            life--;
         }
     }
 }

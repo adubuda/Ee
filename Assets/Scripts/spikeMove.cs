@@ -91,38 +91,6 @@ public class spikeMove : MonoBehaviour
         {
             life = 0;
         }
-        if (walls[0].gameObject.GetComponent<SpriteShapeRenderer>().color == Color.red)
-        {
-            score -= Time.deltaTime;
-        }
-        if (walls[1].gameObject.GetComponent<SpriteShapeRenderer>().color == Color.red)
-        {
-            score -= Time.deltaTime;
-        }
-        if (walls[2].gameObject.GetComponent<SpriteShapeRenderer>().color == Color.red)
-        {
-            score -= Time.deltaTime;
-        }
-        if (walls[3].gameObject.GetComponent<SpriteShapeRenderer>().color == Color.red)
-        {
-            score -= Time.deltaTime;
-        }
-        //if (walls[4].gameObject.GetComponent<SpriteRenderer>().color == Color.red)
-        //{
-        //    score -= Time.deltaTime;
-        //}
-        //if (walls[5].gameObject.GetComponent<SpriteRenderer>().color == Color.red)
-        //{
-        //    score -= Time.deltaTime;
-        //}
-        //if (walls[6].gameObject.GetComponent<SpriteRenderer>().color == Color.red)
-        //{
-        //    score -= Time.deltaTime;
-        //}
-        //if (walls[7].gameObject.GetComponent<SpriteRenderer>().color == Color.red)
-        //{
-        //    score -= Time.deltaTime;
-        //}
         scoreText.SetText("Score: " + scoreForText.ToString());
         lifeText.SetText(life.ToString());
         lifeSlider.value = life;
